@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookStore Page</title>
+    </head>
+    <body>
+        <main>
+            <h1>XYZ Bookstore</h1>
+            <p>Browse our collection of amazing books!</p>
+            
+            <!--The div element is used as a container to group other HTML elements. 
+            We will mainly use the div element when we want to group HTML elements 
+            that will share a set of CSS styles.
+            -->
+
+            <!--The class attribute is used to identify one or more elements for styling. 
+            Unlike the id attribute, class names do not need to be unique: multiple elements 
+            can share the same class.
+            -->
+
+            <!--We can add multiple elements inside a div element to group related content. -->
+            <div class="card-container">
+                <div id="sally-adventure-book" class="card">
+                    <h2>Sally's SciFi Adventure</h2>
+                    <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
+                    
+                    <!--The "button" element is used to create clickable buttons on a webpage. 
+                    Buttons are interactive elements that users can click to perform actions.-->
+
+                    <button class="btn">Buy Now</button>
+
+                </div>
+
+                <div class="card" id="dave-cooking-book">
+                    <h2>Dave's Cooking Adventure</h2>
+                    <p>This is the story of Dave as he learns to cook everything from pancakes to pasta, one recipe at a time.</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <p>Review your selections and continue to checkout.</p>
+            <div class="btn-container">
+                <button id="view-cart-btn" class="btn">View Cart</button>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
