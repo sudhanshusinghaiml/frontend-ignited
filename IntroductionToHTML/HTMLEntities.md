@@ -1,0 +1,60 @@
+# HTML Entities
+
+
+### What are HTML Entities, and What are Some Common Examples
+
+
+
+- Let's say we wanted to display the text. "This is an <img/> element on the screen". If you use the code currently in the editor, 
+it won't display the desired result. Even if we added "src" and "alt" attributes to the example, it would show an image in the middle of 
+the paragraph. Not the desired result. To interact with the example, you will need to enable the interactive editor.
+```html
+<p>This is an <img /> element</p>
+```
+
+- When the HTML parser sees the less than "(<)" symbol followed by an HTML tag name, it interprets that as an HTML element. That is why we are 
+not getting the desired result of "This is an <img/> element on the screen."
+
+- To fix this issue, we can use HTML entities. Here is an updated example using the correct HTML entities for the less (<) than 
+and greater than (>) symbols. Now we should see "This is an <img/> element on the screen."
+
+- Enable the interactive editor and try adding a "&lt;p&gt;learning is fun&lt;/p&gt;" below the paragraph element. We should see 
+<p>learning is fun</p> on the screen.
+
+```html
+<!--Example 1: to add HTML elements in text-->
+<p>This is an &lt;img /&gt; element</p>
+
+<!--Example 2: to add HTML elements in text-->
+&lt;p&gt;learning is fun&lt;/p&gt;
+```
+
+- These types of character references are known as "named character" references. Named references start with an "ampersand sign (&)" and 
+end with "a semicolon (;)". By using a named character reference, the HTML parser will not confuse this with an actual HTML element.
+
+
+- Another type of character reference would be the "decimal numeric" reference. This character reference starts with an ampersand sign 
+and hash symbol (#), followed by one or more decimal digits, followed by a semicolon. Here is an example of using the decimal numeric 
+reference for the less than symbol.
+
+- Enable the interactive editor and change the code to see different symbols. 
+
+```html
+&#60;  <!--This is used for "<" symbol-->
+
+&#169; <!--This is used for "copyright" symbol-->
+
+&#174; <!--This is used for "trademark" symbol-->
+```
+
+
+- The last type of character reference would be the "hexadecimal numeric" reference. This character reference starts with an ampersand sign, 
+hash symbol, and the letter x. Then it is followed by one or more ASCII hex digits and ends with a semicolon:
+
+```html
+&#x20AC; <!--This is used for "Euro" symbol--> 
+
+&#x03A9; <!--This is used for "Greek capital" Omega symbol--> 
+
+&#x3C;
+```
