@@ -17,3 +17,9 @@
 
 - Most search engines will allow you to filter image results by a license. There are also sites like Pixabay and Unsplash, which offer free-to-use images. Always be mindful of the copyright and licensing when you use an image in your website.
 <br>
+
+### Important Points
+- How can you find images that you are allowed to use?  Use websites like Pixabay or Unsplash.
+- Which license releases works to the public domain?   Creative Commons 0
+- What is the default license for images?  All rights reserved
+
